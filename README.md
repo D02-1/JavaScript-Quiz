@@ -20,6 +20,7 @@ let sum = 5 / 0;
 let x = true;
 let y = x ? 1 : 2;
 ```
+Antwort: 1
 - - -
 
 2. Welchen Wert hat ```z.length``` ?
@@ -27,18 +28,20 @@ let y = x ? 1 : 2;
 ```
 let z = "hallo";
 ```
-
+Antwort: 5
 - - -
 3. Bezogen auf Aufgabe 2: Welchen Wert hat ```z[4]``` ?
+Antwort: o
 
 - - -
 
-4. Was ist ```(a===b)``` ?
+1. Was ist ```(a===b)``` ?
 
 ```
 let a = "10";
 let b = 10;
 ```
+false
 - - -
 
 5. Was ergibt ```(e && f)``` ?
@@ -47,6 +50,7 @@ let b = 10;
 let e = true;
 let f = false;
 ```
+false
 - - -
 
 6. Was ergibt ```(c || d)``` ?
@@ -55,6 +59,7 @@ let f = false;
 let c = undefined;
 let d = 3;
 ```
+3, was von JavaScrupt als true ausgewertet wird
 
 ## Teil 2: 
 
@@ -64,9 +69,20 @@ let d = 3;
 let x = 10;
 let x = 11;
 ````
+x ist bereits definiert
 - - -
 
 2. Wie kann man den obigen Code ändern, um den Fehler zu beheben?
+```
+let x = 10;
+x = 11;
+
+// oder
+
+let x = 10;
+let y = 11;
+
+````
 
 - - -
 
@@ -76,7 +92,7 @@ let x = 11;
 let a = undefined;
 let b = 3;
 ```
-
+3
 - - -
 
 4. Was ergibt ```(c < d)``` ?
@@ -85,15 +101,15 @@ let b = 3;
 let c = 3;
 let d = 3;
 ```
-
+false
 - - -
 
 5. Was ergibt ```(c <= d)``` ?
-
+true
 - - -
 
 6. Welche JavaScript-Funktion braucht man, um eine Zufallszahl zwischen 10 und 20 generieren?
-
+Math.random() // wir bräuchten aber noch weiteren Code,um eine Zahl zwischen 10 und 20 zu generieren
 
 
 ## Teil 3
@@ -107,7 +123,7 @@ Markiert die richtigen Antworten mit einem Stern  [ * ]
     
     [ ] Float
     
-    [ ] Boolean
+    [*] Boolean
     
     [ ] String
     
@@ -115,7 +131,7 @@ Markiert die richtigen Antworten mit einem Stern  [ * ]
 
 2. Die Zahl -100 ist ein von welchem Datentyp?
     
-    [ ] Int
+    [*] Int
     
     [ ] Float
     
@@ -133,14 +149,14 @@ Markiert die richtigen Antworten mit einem Stern  [ * ]
     
     [ ] Boolean
     
-    [ ] String
+    [*] String
     
     - - -
     
 
 4. (true || false) ergibt
     
-    [ ] true 
+    [*] true 
     
     [ ] false
     
@@ -150,7 +166,7 @@ Markiert die richtigen Antworten mit einem Stern  [ * ]
     
     [ ] true 
     
-    [ ] false
+    [*] false
     
     - - -
 
@@ -158,15 +174,16 @@ Markiert die richtigen Antworten mit einem Stern  [ * ]
     
     [ ] true 
     
-    [ ] false
+    [*] false
     
+    Hinweis: ```false === false``` ergibt true
     - - -
 
 7. 15%4 ist:
     
     [ ] 0
     
-    [ ] 3
+    [*] 3
     
     [ ] 2
     
@@ -174,7 +191,7 @@ Markiert die richtigen Antworten mit einem Stern  [ * ]
 
 8. 13%2 ist:
     
-    [ ] 1
+    [*] 1
     
     [ ] 0
     
@@ -182,7 +199,7 @@ Markiert die richtigen Antworten mit einem Stern  [ * ]
 
 9. let x = "hello world"; Wie kann ich an den zweiten Buchstaben "e" rankommen?
     
-    [ ] x[1]
+    [*] x[1]
     
     [ ] x[2]
     
@@ -196,16 +213,18 @@ Markiert die richtigen Antworten mit einem Stern  [ * ]
 
 1. Welche Datentypen hat JavaScript bzw. welche fallen dir ein?
 
+Boolean, String, Number, Object, undefined, null, ...
 - - -
 
 2. Ist folgender Code gültig bzw. richtig? 
 
 ```const arr = [function(){alert('hello world')}, 0, "bye", undefined]```
 
-2a. Falls nein, warum nicht?
+2a. Falls nein, warum nicht? // Es geht
 
 2b. Falls ja, wie könntest du die function im Array aufrufen?
 
+```arr[0]()```
 - - -
 
 3. Welche Wert wird die console ausgeben und warum?
