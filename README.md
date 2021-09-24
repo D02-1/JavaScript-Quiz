@@ -73,6 +73,8 @@ Antwort: so etwas wie: x ist bereits deklariert
 - - -
 
 2. Wie kann man den obigen Code ändern, um den Fehler zu beheben?
+
+Antwort:
 ```
 let x = 10;
 x = 11;
@@ -110,7 +112,8 @@ Antwort: true
 
 6. Welche JavaScript-Funktion braucht man, um eine Zufallszahl zwischen 10 und 20 generieren?
 
-Antwort: Math.random() // wir bräuchten aber noch weiteren Code, um tatsächlich eine Zahl zwischen 10 und 20 zu generieren, z.B.
+Antwort: ```Math.random()``` 
+Wir bräuchten aber noch weiteren Code, um tatsächlich eine Zahl zwischen 10 und 20 zu generieren, z.B.:
 
 ```
 function randomIntFromInterval(min, max) { // min and max included 
@@ -283,8 +286,7 @@ Antwort: ```myObj.hobbys[1]```
 Antwort: ```myObj.familie.tochter```
 
 4d. Mit welche Methode erhalte ich alle keys von myObj in einem Array?
-```Òbject.keys(myObj)```
-Erzeugt ```['name', 'alter', 'hobbys', 'familie']```
+```Òbject.keys(myObj)``` erzeugt folgendes Array: ```['name', 'alter', 'hobbys', 'familie']```
 
 - - -
 
@@ -294,7 +296,9 @@ Erzeugt ```['name', 'alter', 'hobbys', 'familie']```
 const myArr = [5, 3, 1, 6, 10, 0, -100];
 ```
 Antwort: ```Math.max(...myArr)```
-... führt zum "destructering" des Arrays => wir erhalten also alle WErte, die sich im Array befinden
+Die drei Punkte "..." führen zum "destructering" des Arrays => wir erhalten also alle Werte, die sich im Array befinden. Die Math.max Methode wird dadurch quasi so aufgerufen:
+
+```Math.max(5, 3, 1, 6, 10, 0, -100)```
 - - -
 
 6. Was gibt folgender Code aus und warum?
@@ -308,8 +312,8 @@ function logNumber () {
 logNumber();
 ```
 
-Antwort: ```Original Number undefined````
-Wir arbeiten hier mit ```var``` und das Thema hoisting ist hier entscheidend (gerne google fragen, da nicht mal eben schnell erklärt)
+Antwort: ```Original Number undefined```
+Wir arbeiten hier mit ```var``` und das Thema "hoisting" ist hier entscheidend (gerne google fragen, da nicht mal eben schnell erklärt ;) 
 - - -
 
 7. Wie rufst du die function greet auf?
@@ -325,7 +329,8 @@ function something() {
 }
 ```
 
-Antwort: ```something()```
+Antwort: ```something();```
+
 Die Funktion greet ist nur in der something Funktion gültig und kann daher nur über sie aufgerufen werden
 - - -
 
@@ -383,7 +388,7 @@ Antwort: ```i = i + 5;```
 const countries = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua &amp; Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia"];
 ```
 
-Antwort;
+Antwort:
 ```
 countries.forEach(el=>{
   console.log(el)
