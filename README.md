@@ -51,15 +51,7 @@ let e = true;
 let f = false;
 ```
 Antwort: false
-- - -
 
-6. Was ergibt ```(c || d)``` ?
-
-```
-let c = undefined;
-let d = 3;
-```
-Antwort: 3, was von JavaScript als true ausgewertet wird
 
 ## Teil 2: 
 
